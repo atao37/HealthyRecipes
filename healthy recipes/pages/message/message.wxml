@@ -1,0 +1,12 @@
+<view class="message">
+   <view class="message-item" wx:for="{{list}}" wx:key="index" bindtap="toDetail" data-info="{{item}}">
+      <image class="pho" src="{{item.imgList[0]}}"></image>
+      <view class="message-content">
+         <text class="title">{{item.title}}</text>
+         <view class="bottom">
+            <text class="source">{{item.source}}</text>
+            <text class="publish-time">{{item.time}}</text>
+         </view>
+      </view>
+   </view>
+</view>

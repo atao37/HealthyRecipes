@@ -1,0 +1,43 @@
+<view class="body">
+   <SearchInput bindtap="toSearch" />
+
+   <swiper class="banner" indicator-dots="true" autoplay="false" interval="2000" duration="500">
+      <block wx:for="{{background}}" wx:key="*this">
+         <swiper-item>
+            <image class="banner-image" src="{{item}}"></image>
+         </swiper-item>
+      </block>
+   </swiper>
+
+   <view class="tab">
+      <text class="tabRecommend">热门推荐</text>
+      <view class="check" bindtap="toSort">查看全部</view>
+   </view>
+
+   <view class="recommend">
+      <view class="recommendList" bindtap="toHomeCooking" data-text="{{item.text}}">
+         <image class="image" src="/images/家常菜.jpg"></image>
+         <text class="font">粤菜</text>
+      </view>
+      <view class="recommendList" bindtap="toColdfood">
+         <image class="image" src="/images/凉拌菜.jpg"></image>
+         <text class="font">凉拌</text>
+      </view>
+      <view class="recommendList" bindtap="toNoodle">
+         <image class="image" src="/images/面食.jpg"></image>
+         <text class="font">面食</text>
+      </view>
+      <view class="recommendList" bindtap="toSoup">
+         <image class="image" src="/images/靓汤.jpg"></image>
+         <text class="font">靓汤</text>
+      </view>
+   </view>
+
+   <view class="title">
+      <text>-热门菜式-</text>
+   </view>
+
+   <view class="recipes">
+      <ViewList data="{{item}}" wx:for="{{list}}" wx:key="index" bindtap="toDetail" data-info="{{item}}"/>
+   </view>
+</view>

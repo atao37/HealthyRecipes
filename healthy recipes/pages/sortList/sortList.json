@@ -1,0 +1,6 @@
+{
+   "usingComponents": {
+      "ViewList":"/components/ViewList/ViewList"
+   },
+   "navigationBarTitleText": "菜谱列表"
+}

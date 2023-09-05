@@ -1,0 +1,6 @@
+{
+   "usingComponents": {
+      "ViewList":"/components/ViewList/ViewList"
+   },
+   "navigationBarTitleText": "我的发布"
+}

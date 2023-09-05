@@ -1,0 +1,23 @@
+<view class="body">
+  <SearchInput bindtap="toSearch"/>
+  <view class="sort-container">
+    <view class="sort-left">
+      <view class="sort-left-item {{select===index ?   'sort-select':''}}" 
+        wx:for="{{foodlist}}" 
+        wx:key="index"
+        data-index="{{index}}"
+        bindtap="selectLeft"
+      >
+        <text>{{item}}</text>
+        <block wx:if="{{select===index}}">
+          <view class="sort-line"></view>
+        </block>
+      </view>
+    </view>
+    <view class="sort-right">
+      <view class="sort-right-item" wx:for="{{ rightList[select] }}" wx:key="index" bindtap="toSort" data-text="{{item.text}}">
+         <button class="sort-right-btn">{{item.text}}</button>
+      </view>
+    </view>
+  </view>
+</view>

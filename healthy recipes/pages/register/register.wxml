@@ -1,0 +1,10 @@
+<view class="body">
+   <image class="logo" src="/images/面食.jpg" />
+   <view class="container">
+      <input class="input" placeholder="请输入账号" bindinput="getUserName" type="text"/>
+      <input class="input" placeholder="请输入密码" bindinput="getPassword" type="password" />
+      <input class="input" placeholder="请再次输入密码" bindinput="getConfirmPwd" type="password" />
+      <text class="toLogin" bindtap="toLogin">去登录</text>
+      <button class="register-btn" type="primary" bindtap="submit">注册</button>
+   </view>
+</view>

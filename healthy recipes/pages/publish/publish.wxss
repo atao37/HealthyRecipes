@@ -1,0 +1,122 @@
+.body{
+   width: 100vw;
+   min-height: 100vh;
+   background-color: #fff;
+}
+
+.top{
+   width: 100%;
+   border-bottom: 5rpx solid #f3f3f3;
+   text-align: right;
+   box-sizing: border-box;
+   padding: 15rpx 15rpx;
+}
+
+.top .publish-btn{
+   background-color: rgb(89, 168, 233);
+   color: #fff;
+   border-radius: 50rpx;
+   width: 170rpx;
+   font-size: 30rpx;
+   padding: 15rpx;
+}
+
+.container{
+   padding: 10rpx 35rpx 50rpx 35rpx;
+}
+
+.classify{
+   margin-top: 20rpx;
+   display: flex;
+   width: 100%;
+   align-items: center;
+}
+
+.classify .sort{
+   margin-right: 20rpx;
+   white-space: nowrap;
+}
+
+.classify .picker{
+   width:100%;
+}
+
+.picker .no-select,.select{
+   border: 2rpx solid #aaaaaa;
+   width: 100%;
+   padding: 10rpx 20rpx;
+   box-sizing: border-box;
+   border-radius: 15rpx;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.picker .no-select .icon{
+   width: 50rpx;
+   height: 50rpx;
+}
+
+.input-list{
+   padding: 30rpx 15rpx;
+   padding-top: 80rpx;
+   border-bottom: 5rpx solid #f3f3f3;
+}
+
+.input-list .input-item{
+   margin-bottom: 50rpx;
+}
+
+.desc{
+   padding: 30rpx 15rpx;
+   border-bottom: 5rpx solid #f3f3f3;
+   position: relative;
+}
+
+.desc .desc-icon{
+   width: 35rpx;
+   height: 35rpx;
+   position: absolute;
+   top:30rpx;
+   right: 0;
+}
+
+.upload .upload-top{
+   display: flex;
+   justify-content: space-between;
+}
+
+.upload .upload-pho{
+   display: flex;
+   flex-wrap: wrap;
+   margin-top:20rpx;
+}
+
+.upload .upload-pho .default{
+   width: 33%;
+   height:240rpx;
+}
+
+.picker .select .select-icon{
+   width: 30rpx;
+   height: 30rpx;
+}
+
+.image-list{
+   width: 33%;
+   height:240rpx;
+   position:relative
+}
+
+.image-list .pho-list{
+   width: 100%;
+   height: 100%;
+}
+
+.image-list .pho-delete{
+   width: 30rpx;
+   height: 30rpx;
+   position:absolute;
+   top:0rpx;
+   right:0rpx;
+}

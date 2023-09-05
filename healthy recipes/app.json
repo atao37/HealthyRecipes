@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/sort/sort",
+    "pages/index/index",
+    "pages/me/me",
+    "pages/myPublish/myPublish",
+    "pages/myCollection/myCollection",
+    "pages/myInfo/myInfo",
+    "pages/search/search",
+    "pages/publish/publish",
+    "pages/recipesDetail/recipesDetail",
+    "pages/message/message",
+    "pages/messageDetail/messageDetail",
+    "pages/sortList/sortList",
+    "pages/searchHistory/searchHistory",
+    "pages/login/login",
+    "pages/register/register"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "健康菜谱",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home(1).png"
+
+    },{
+      "pagePath": "pages/message/message",
+      "text": "资讯",
+      "iconPath": "images/message(1).png",
+      "selectedIconPath": "images/message.png"
+
+    },{
+      "pagePath": "pages/sort/sort",
+      "text": "分类",
+      "iconPath": "images/sort(1).png",
+      "selectedIconPath": "images/sort.png"
+
+    },{
+      "pagePath": "pages/publish/publish",
+      "text": "发布",
+      "iconPath": "images/publish(2).png",
+      "selectedIconPath": "images/publish(1).png"
+
+    },{
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "images/me(1).png",
+      "selectedIconPath": "images/me(2).png"
+
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

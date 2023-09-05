@@ -1,0 +1,16 @@
+<view class="recipes-body">
+   <view class="recipes-item">
+      <image class="pho" src="{{data.imgList[0]}}"></image>
+      <view class="recipes-content">
+         <text class="name">{{data.name}}</text>
+         <text class="food">{{data.food}}</text>
+         <text class="publish-time">{{data.time}}</text>
+      </view>
+   </view>
+   <view class="recipes-btn" wx:if="{{handle}}">
+      <view>
+         <button class="update-btn" size="mini" type="primary" data-id="{{data._id}}" catchtap="toUpdate">修改</button>
+         <button class="delete-btn" size="mini" type="warn" data-id="{{data._id}}" catchtap="toDelete">删除</button>
+      </view>
+   </view>
+</view>

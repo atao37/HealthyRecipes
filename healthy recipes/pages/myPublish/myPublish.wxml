@@ -1,0 +1,7 @@
+<view>
+   <view class="recipes">
+      <block wx:for="{{list}}" wx:key="index">
+         <ViewList data="{{item}}" bindtap="toDetail" data-info="{{item}}" handle="{{true}}" bindgetdelete="getDelete" bindgetupdate="getUpdate" />
+      </block>
+   </view>
+</view>

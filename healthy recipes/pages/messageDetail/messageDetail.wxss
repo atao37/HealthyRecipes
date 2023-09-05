@@ -1,0 +1,46 @@
+.body{
+   background-color: #fff;
+   padding: 30rpx;
+}
+
+.title{
+   font-weight: bold;
+   font-size: 50rpx;
+   display: flex;
+   justify-content: center;
+}
+
+.information{
+   display: flex;
+   justify-content: center;
+   margin-top: 20rpx;
+}
+
+.information .source{
+   color: #666;
+   font-size: 32rpx;
+   padding-right: 10rpx;
+}
+
+.information .symbol{
+   font-size: 32rpx;
+   padding-right: 10rpx;
+   color: rgb(214, 213, 213);
+}
+
+.information .publish-time{
+   color: #666;
+   font-size: 32rpx;
+   padding-right: 10rpx;
+}
+
+.pho{
+   display: flex;
+   justify-content: center;
+   padding: 40rpx 10rpx;
+}
+
+.pho .pho-image{
+   border-radius:20rpx;
+   height: 450rpx;
+}

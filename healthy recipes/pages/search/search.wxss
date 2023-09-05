@@ -1,0 +1,81 @@
+.body{
+   background-color: #ffffff;
+   min-height: 100vh;
+   width: 100vw;
+   padding-top: 20rpx;
+}
+
+.search{
+   display: flex;
+   width:90%;
+   margin:0 auto;
+   background-color: #f3f3f3;
+   border-radius: 40rpx;
+   padding: 10rpx 20rpx;
+   align-items: center;
+   box-sizing: border-box;
+   position: relative;
+}
+
+.search .search-image{
+   width: 40rpx;
+   height: 40rpx;
+   margin-right: 15rpx;
+}
+
+.search .close-icon{
+   width: 40rpx;
+   height: 40rpx;
+   position:absolute;
+   right: 20rpx;
+}
+
+.search-log{
+   display: flex;
+   padding: 30rpx 20rpx;
+   justify-content: space-between;
+   font-size: 35rpx;
+   border-bottom: 3rpx solid #f3f3f3;
+}
+
+.search-log .delete-icon{
+   width: 45rpx;
+   height: 45rpx;
+}
+
+.log-list{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 15rpx 20rpx;
+   font-size: 35rpx;
+}
+
+.log-list .log-item{
+   background-color: #666666;
+   color: #ffffff;
+   border-radius: 15rpx;
+   margin-bottom: 15rpx;
+   margin-right: 15rpx;
+   padding: 15rpx;
+}
+
+.result-search{
+   display: flex;
+   flex-direction:column;
+   margin-top: 30rpx;
+}
+
+.result-search .search-item{
+   justify-content: space-between;
+   display: flex;
+   width: 100%;
+   padding: 20rpx 30rpx;
+   box-sizing:border-box;
+   border-bottom: 3rpx solid #f3f3f3;
+   font-size: 35rpx;
+}
+
+.search-item .item-right{
+   width: 35rpx;
+   height: 35rpx;
+}

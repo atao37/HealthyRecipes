@@ -1,0 +1,19 @@
+<view class="body">
+   <view class="title">
+      <text>{{info.title}}</text>
+   </view>
+
+   <view class="information">
+      <text class="source">{{info.source}}</text>
+      <text class="symbol">|</text>
+      <text class="publish-time">{{info.time}}</text>
+   </view>
+
+   <view class="pho">
+      <image class="pho-image" src="{{info.imgList[0]}}"></image>
+   </view>
+
+   <view class="main">
+      <text>{{info.desc}}</text>
+   </view>
+</view>

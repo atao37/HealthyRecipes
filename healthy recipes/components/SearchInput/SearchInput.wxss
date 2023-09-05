@@ -1,0 +1,31 @@
+.search{
+  background-color: #fff;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchInput{
+  background-color: #f3f3f3;
+  height: 80rpx;
+  width: 90%;
+  border-radius: 40rpx;
+  color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchContent{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.searchContent image{
+  height: 40rpx;
+  width: 40rpx;
+}

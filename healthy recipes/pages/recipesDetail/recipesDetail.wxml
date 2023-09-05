@@ -1,0 +1,50 @@
+<view class="body">
+   <swiper class="banner" indicator-dots="true" autoplay="false" interval="2000" duration="500">
+      <block wx:for="{{info.imgList}}" wx:key="*this">
+         <swiper-item>
+            <image class="banner-image" src="{{item}}"></image>
+         </swiper-item>
+      </block>
+   </swiper>
+
+   <view class="head">
+      <view class="head-left">
+         <view class="name">{{info.name}}</view>
+      </view>
+      <view class="head-right" bindtap="toCollect">
+         <image class="collect-icon" src="{{collectIcon[0]}}"></image>
+         <text class="collect">收藏</text>
+      </view>
+   </view>
+
+   <view class="content">
+      <view class="food">
+         <text class="food-key">用料：</text>
+         <text class="food-value">{{info.food}}</text>
+      </view>
+      <view class="desc">
+         <text class="desc-key">做法：</text>
+         <text class="desc-value">{{info.desc}}</text>
+      </view>
+   </view>
+
+   <view class="comment">
+      <view class="title">-评论区-</view>
+      <view class="comment-list">
+         <view class="comment-item" wx:for="{{info.commentList}}" wx:key="index">
+            <view class="comment-item-left">
+               <image class="avatar" src="{{item.avatarUrl}}"></image>
+               <view class="content">
+                  <text>{{item.nickName}}</text>
+                  <text>{{item.content}}</text>
+               </view>
+            </view>
+            <view class="comment-item-right">
+               {{item.time}}
+            </view>
+         </view>
+      </view>
+      <textarea class="textarea" placeholder="评论在此输入" name="" id="" cols="30" rows="10" value="{{comment}}" bindinput="getComment"></textarea>
+      <button class="button" type="primary" bindtap="submitComment">提交</button>
+   </view>
+</view>
